@@ -1,3 +1,11 @@
+let paragrafo = document.querySelector("#para1");
+
+paragrafo.addEventListener("click", trocaTexto);
+
+function trocaTexto(){
+    document.getElementById('para1').innerHTML='Olá mundo!';
+}
+
 console.log("Olá, mundo!");
 console.log("4 + 4 é " + (4 + 4));
 
