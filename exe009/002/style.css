@@ -20,3 +20,10 @@ input[type='text']{
 .botao:hover{
     background: #505050;
 }
+
+.problema{
+    background: red;
+    color: cornsilk;
+    padding: 5px;
+    margin: 5px;
+}

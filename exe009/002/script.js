@@ -7,6 +7,14 @@ let resposta = document.querySelector("#resposta");
 botao.addEventListener("click", calcular);
 
 function calcular(){
+    if(campo1.value === '' || campo2.value === ''){
+        resposta.classList.add("problema");
+        resposta.innerHTML = "Campo vazio!!";
+        setTimeout(()=>{
+            resposta.classList.remove("problema");
+            resposta.innerHTML = '';
+        },3000);
+    }else{
     const valor1 = parseInt(campo1.value);
     const valor2 = parseInt(campo2.value);
     const operacao = seletor.value;
@@ -22,5 +30,5 @@ function calcular(){
         
     if(operacao === "dividir")
         resposta.innerHTML = valor1 / valor2;
-        
+   }     
 }
